@@ -1,0 +1,70 @@
+hotels:
+    css: div.sr_item
+    xpath: null
+    multiple: true
+    type: Text
+    children:
+        name:
+            css: span.sr-hotel__name
+            xpath: null
+            type: Text
+        location:
+            css: a.bui-link
+            xpath: null
+            type: Text
+        price:
+            css: div.bui-price-display__value
+            xpath: null
+            type: Text
+        price_for:
+            css: div.bui-price-display__label
+            xpath: null
+            type: Text
+        room_type:
+            css: strong
+            xpath: null
+            type: Text
+        beds:
+            css: div.c-beds-configuration
+            xpath: null
+            type: Text
+        rating:
+            css: div.bui-review-score__badge
+            xpath: null
+            type: Text
+        rating_title:
+            css: div.bui-review-score__title
+            xpath: null
+            type: Text
+        number_of_ratings:
+            css: div.bui-review-score__text
+            xpath: null
+            type: Text
+        url:
+            css: a.hotel_name_link
+            xpath: null
+            type: Link
+        distance:
+            css: 'div.sr_card_address_line span:nth-of-type(2)'
+            xpath: null
+            type: Text
+        start_date:
+            css: null
+            xpath: '//div[contains(concat(" ",normalize-space(@class)," ")," sb-dates__col ")][contains(concat(" ",normalize-space(@class)," ")," --checkin-field ")]//div[contains(concat(" ",normalize-space(@class)," ")," sb-date-field__display ")]'
+            type: Text
+        end_date:
+            css: null
+            xpath: '//div[contains(concat(" ",normalize-space(@class)," ")," sb-dates__col ")][contains(concat(" ",normalize-space(@class)," ")," --checkout-field ")]//div[contains(concat(" ",normalize-space(@class)," ")," sb-date-field__display ")]'
+            type: Text
+        stars:
+            css: null
+            xpath: '//div[contains(concat(" ",normalize-space(@class)," ")," sr_item ")][17]//span[contains(concat(" ",normalize-space(@class)," ")," bui-rating ")]'
+            type: Text
+        breakfast_inclusion:
+            css: null
+            xpath: '//div[@id="hotel_50605"][contains(concat(" ",normalize-space(@class)," ")," sr_item_photo ")]//div[contains(concat(" ",normalize-space(@class)," ")," add-red-tag__content ")]'
+            type: Text
+        free_cancellation:
+            css: null
+            xpath: '//div[contains(concat(" ",normalize-space(@class)," ")," sr_item ")][17]//sup[contains(concat(" ",normalize-space(@class)," ")," sr_room_reinforcement ")][contains(concat(" ",normalize-space(@class)," ")," e2e-free-cancellation ")]'
+            type: Text
